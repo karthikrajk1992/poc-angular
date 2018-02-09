@@ -11,15 +11,15 @@ export class AppComponent {
   offers;
  
   constructor(private serverService: ServerService){
-  
-  this.serverService.storeServers()
-  .subscribe((response: Response) => {
-  	this.getres = response.json()
-  	this.offers = this.getres.data
-  	console.log(this.getres);
+	  this.serverService.storeServers()
+	  .subscribe((response) => {
+	  	this.getres = response.json()
+	  	this.offers = this.getres.data
+	  	console.log(this.getres);
+	  }
+	  ,(error) =>console.log(error)
+	  );
+
   }
-  ,(error) =>console.log(error)
-  );
- 
-  }
+
 }

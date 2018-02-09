@@ -4,7 +4,7 @@ import { Http } from '@angular/http';
 @Injectable()
 export class ServerService{
 	constructor(private http: Http){}
-	storeServers(server: any[]){
+	storeServers(){
 		return this.http.get('https://api.spini.co/v1/home/offers');
 	}
 }
