@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { ServerService } from './server.service';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,4 +7,19 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  getres;
+  offers;
+ 
+  constructor(private serverService: ServerService){
+  
+  this.serverService.storeServers()
+  .subscribe((response: Response) => {
+  	this.getres = response.json()
+  	this.offers = this.getres.data
+  	console.log(this.getres);
+  }
+  ,(error) =>console.log(error)
+  );
+ 
+  }
 }
