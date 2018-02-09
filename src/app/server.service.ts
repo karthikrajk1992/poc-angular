@@ -5,6 +5,6 @@ import { Http } from '@angular/http';
 export class ServerService{
 	constructor(private http: Http){}
 	storeServers(){
-		return this.http.get('https://api.spini.co/v1/home/offers');
+		return this.http.get('https://stagingapi.spini.co/v1/home/offers');
 	}
 }
