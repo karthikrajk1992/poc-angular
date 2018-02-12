@@ -7,4 +7,7 @@ export class ServerService{
 	storeServers(){
 		return this.http.get('https://stagingapi.spini.co/v1/home/offers');
 	}
+	getBanner(){
+		return this.http.get('https://stagingapi.spini.co/v1/home/preload_data');
+	}
 }

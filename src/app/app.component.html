@@ -1,51 +1,5 @@
-<!-- {{myAdd}}
-<button class="btn btn-default" (click)="onSave()">get offers</button> -->
-<header>
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span> 
-      </button>
-      <a class="navbar-brand" href="#">WebSiteName</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">Page 1</a></li>
-        <li><a href="#">Page 2</a></li> 
-        <li><a href="#">Page 3</a></li> 
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-</header>
-<section  style="margin-top: 70px;">
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-md-4" *ngFor="let offer of offers">
-      <div class="col-md-12">
-        <img src="{{offer.attributes.avatar_medium}}" width="100" width="100%">
-        <!-- {{offer.attributes.avatar_medium}} -->
-      </div>
-      <div class="col-md-12">
-        <h5>{{offer.attributes.title}}</h5>
-      </div>
-      <div class="col-md-12">
-        <h6>{{offer.attributes.place}}</h6>
-      </div>
-    </div>
-  </div>
-</div>
-</section>
-<footer>
-  <div class="container">
-    <div class="col-md-12" style="background-color: black;min-height: 300px;color:#fff"> Footer</div>
-  </div>
-</footer>
+<app-header></app-header>
+<app-section-banner>Loading.....</app-section-banner>
+<app-section-how-works></app-section-how-works>
+<app-section-card>Loading.....</app-section-card>
+<app-section-footer></app-section-footer>

@@ -1,0 +1,49 @@
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 col-sm-4 col-xs-12 pad5" *ngFor="let offer of offers">
+        <div class="col-md-12 border nopad">
+        <div class="row">
+          <div class="col-md-12">
+            <img  src="{{offer.attributes.avatar_medium}}" alt="" class="img-responsive" width="100%">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="col-md-6">
+              <button class="btn btn-info btn-sm">Getcode</button>
+            </div>
+            <div class="col-md-6 " style="text-align:right">
+              <i class="fa fa-bookmark-o fa-2x" aria-hidden="true"></i>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="col-md-6">
+              <p>{{offer.attributes.business_name}}</p>
+            </div>
+            <div class="col-md-6" style="text-align:right">
+              <i class="fa fa-heart-o fa-lg" aria-hidden="true"></i>
+              <span>5</span>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="col-md-12">
+              <p>{{offer.attributes.place}}</p>
+            </div>
+            <div class="col-md-12">
+              <i class="fa fa-facebook-official fa-lg" aria-hidden="true"></i>
+              <i class="fa fa-twitter fa-lg" aria-hidden="true"></i>
+              <i class="fa fa-instagram fa-lg" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-md-12">
+            <p style="color:red">Treasure value</p>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>

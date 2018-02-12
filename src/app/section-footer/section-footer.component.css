@@ -1,0 +1,15 @@
+footer{
+  /* min-height: 200px; */
+  background-color: #292725;
+}
+footer h5{
+  color: #fff;
+}
+.list-group-item {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    margin-bottom: -1px;
+     background-color: #292725 ;
+    border: none;
+}
